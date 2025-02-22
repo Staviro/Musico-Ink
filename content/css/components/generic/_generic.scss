@@ -1,0 +1,78 @@
+@import '../../shared/variables';
+
+
+.generic-card-li {
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.generic-card-item {
+    padding: 8px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    min-width: calc(100% / 3 - 11px);
+    max-width: calc(100% / 3 - 11px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &:hover {
+        box-shadow: 0 4px 8px rgba(black, 15%);
+        outline: 2px solid white;
+        .generic-item-overlay  {
+            pointer-events: initial;
+            opacity: 1;
+            transform: scale(100%);
+        }
+    }
+}
+
+.generic-item-overlay {
+    transition: all 150ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(black, 70%);
+    border-radius: 16px;
+    flex-direction: column;
+    transform: scale(50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.generic-card-header-img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    border-radius: 12px;
+    height: 320px;
+}
+
+.generic-card-body {
+    padding: 12px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    &.music {
+        gap: 16px;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+.generic-card-title {
+    font-weight: 500;
+}
+
+.generic-card-sub-title {
+    font-size: 14px;
+}
+
+@import './generic.responsive';

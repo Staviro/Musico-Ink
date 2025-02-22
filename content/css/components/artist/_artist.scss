@@ -1,0 +1,113 @@
+@import '../../shared/variables';
+
+.artist-li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    overflow-x: auto;
+}
+
+.artist-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    border-radius: 16px;
+    padding: 16px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba($color-primary, 7.5%);
+        outline: 1px solid rgba($color-primary, 25%);
+        .artist-item-img {
+            outline: 3px solid $color-primary;
+        }
+        .arist-item-name {
+            text-decoration: underline;
+        }
+    }
+}
+
+.artist-item-img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 222px;
+}
+
+.modal-artist {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(black, 70%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.modal-artist-content {
+    margin: auto;
+    max-width: 442px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: white;
+    outline: 2px solid #777;
+    box-sizing: border-box;
+}
+
+.modal-artist-header {
+    height: 156px;
+    position: relative;
+    .modal-artist-header-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+        border-radius: 8px 8px 0 0;
+    }
+}
+
+.modal-artist-header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px 8px  0 0;
+    background-color: rgba(black, 70%);
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    color: white;
+}
+
+.modal-artist-header-close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    img {
+        filter: invert(1);
+    }
+}
+
+.modal-artist-body {
+    padding: 16px;
+    font-size: 15px;
+    color: #777;
+}
+
+.album-track-unavailable {
+    padding: 12px;
+    font-size: 14px;
+    background-color: rgba(red, 5%);
+    border: 1px solid rgba(red, 10%);
+    border-radius: 8px;
+}

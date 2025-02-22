@@ -1,0 +1,11 @@
+@import 'font';
+@import './shared/main';
+@import './shared/global';
+
+//components
+@import './components/nav/nav';
+@import './components/generic/generic';
+@import './components/button/button';
+@import './components/album/album';
+@import './components/artist/artist';
+@import './components/music/music';

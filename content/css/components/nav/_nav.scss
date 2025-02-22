@@ -1,0 +1,47 @@
+@import '../../shared/variables';
+
+nav {
+    border-bottom: 1px solid #eee;
+}
+
+.nav-brand {
+    display: flex;
+}
+
+.nav-content {
+    display: flex;
+    padding: 8px 16px;
+    gap: 16px;
+    align-items: center;
+}
+
+.nav-links {
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        a {
+            padding: 8px 20px;
+            text-decoration: none;
+            color: #444;
+            transition: all 150ms;
+
+            &:hover {
+                color: $color-primary;
+                letter-spacing: 2px;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.nav-mobile {
+    display: none;
+    justify-content: center;
+    align-items: center
+}
+
+@import './nav.responsive';

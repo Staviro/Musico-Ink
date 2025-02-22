@@ -1,0 +1,96 @@
+
+.modal-music {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(black, 70%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.modal-music-content {
+    margin: auto;
+    max-width: 442px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: white;
+    outline: 2px solid #777;
+    box-sizing: border-box;
+}
+
+.modal-music-header {
+    padding: 16px;
+}
+
+.modal-music-close {
+    &:hover {
+        .modal-music-close-line {
+            scale: 1.4;
+        }
+    }
+}
+
+.modal-music-close-line {
+    width: 72px;
+    cursor: pointer;
+    height: 8px;
+    background-color: #aaa;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.modal-music-body {
+    padding: 0 16px;
+    font-size: 15px;
+    color: #777;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.modal-music-cover {
+    padding: 14px;
+    img {
+        border-radius: 16px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.music-track {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.music-track-line {
+    background-color: rgba(black, .1);
+    border-radius: 4px;
+    height: 4px;
+    padding: 2px;
+    width: 100%;
+}
+
+.music-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-music-info {
+    &.track {
+        font-size: 18px;
+    }
+    &.artist {
+        font-size: 15px;
+        text-decoration: underline;
+        color: #777;
+    }
+}

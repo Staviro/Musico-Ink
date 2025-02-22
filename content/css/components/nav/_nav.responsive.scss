@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+    .nav-content {
+        justify-content: space-between;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+}

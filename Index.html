@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./content/lib/malo/malo.css">
+    <link rel="stylesheet" href="./content/lib/dom-flowt/dom-flowt.css"> 
+    <link rel="stylesheet" href="./content/css/main.css"/>
+    <title>Music Platform</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-content">
+                    <a class="nav-brand" href="#">
+                        <img  alt="icon" src="./content/icons/Musico Ink.svg" height="38"/>
+                    </a>
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="#">Albums</a></li>
+                            <li><a href="#">Music</a></li>
+                            <li><a href="#">Artists</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-mobile">
+                        <img alt="icon" src="./content/icons/menu_24dp_000_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32"/>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <p>New Albums</p>
+                </div>
+                <div class="section-body">
+                    <p class="text">Check out the latest albums from these artists</p>
+                    <div class="generic-card-li">
+                        <div class="generic-card-item" dom-flowt-is-visible="false" dom-flowt-type="float-up" dom-flowt-type="float-up">
+                            <div class="generic-card-header">
+                                <img alt="icon" class="generic-card-header-img" src="./content/images/albums/erik-mclean-OQgpRHFJwbQ-unsplash.jpg" height="272"/>
+                            </div>
+                            <div class="generic-card-body">
+                                <div class="generic-card-title">Operation Doomsday</div>
+                                <div class="generic-card-sub-title">Doomsday</div>
+                            </div>
+                            <div class="generic-item-overlay">
+                                <div class="generic-item-overlay-item">
+                                    <button class="btn-generic-card" onclick="album.open('#modal-album-doomsday')">Open</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="generic-card-item" dom-flowt-is-visible="false" dom-flowt-type="float-up">
+                            <div class="generic-card-header">
+                                <img alt="icon" class="generic-card-header-img" src="./content/images/albums/c-d-x-PDX_a_82obo-unsplash.jpg" height="272"/>
+                            </div>
+                            <div class="generic-card-body">
+                                <div class="generic-card-title">The Mixtape</div>
+                                <div class="generic-card-sub-title">Artios</div>
+                            </div>
+                            <div class="generic-item-overlay">
+                                <div class="generic-item-overlay-item">
+                                    <button class="btn-generic-card">Open</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="generic-card-item" dom-flowt-is-visible="false" dom-flowt-type="float-up">
+                            <div class="generic-card-header">
+                                <img alt="icon" class="generic-card-header-img" src="./content/images/albums//daniel-fontenele-S4KVecxgCDo-unsplash.jpg" height="272"/>
+                            </div>
+                            <div class="generic-card-body">
+                                <div class="generic-card-title">Almost Completed</div>
+                                <div class="generic-card-sub-title">F8</div>
+                            </div>
+                            <div class="generic-item-overlay">
+                                <div class="generic-item-overlay-item">
+                                    <button class="btn-generic-card">Open</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="generic-card-item" dom-flowt-is-visible="false" dom-flowt-type="float-up">
+                            <div class="generic-card-header">
+                                <img alt="icon" class="generic-card-header-img" src="./content/images/albums/adrianna-geo-1rBg5YSi00c-unsplash.jpg" height="272"/>
+                            </div>
+                            <div class="generic-card-body">
+                                <div class="generic-card-title">The Last One</div>
+                                <div class="generic-card-sub-title">Asterisk</div>
+                            </div>
+                            <div class="generic-item-overlay">
+                                <div class="generic-item-overlay-item">
+                                    <button class="btn-generic-card">Open</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="artists">
+            <div class="container">
+                <div class="section-header">
+                    <p>Popular Artists</p>
+                </div>
+                <div class="section-body">
+                    <p class="text">See which arist are currently trending!</p>
+                    <div class="artist-li">
+                        <div class="artist-item" dom-flowt-is-visible="false" dom-flowt-type="flip-horizontal" dom-flowt-duration="1000" dom-flowt-is-visible="false" dom-flowt-type="flip-horizontal" dom-flowt-duration="1000" onclick="artist.open('#modal-artist-artios')">
+                            <div class="artist-item-header">
+                                <img alt="icon" class="artist-item-img" height="222" width="222" src="./content/images/artists/austin-neill-eC0P7kl_jXs-unsplash.jpg"/>
+                            </div>
+                            <div class="artist-item-name">
+                                Artios
+                            </div>
+                        </div>
+                        <div class="artist-item" dom-flowt-is-visible="false" dom-flowt-type="flip-horizontal" dom-flowt-duration="1000">
+                            <div class="artist-item-header">
+                                <img alt="icon" class="artist-item-img" height="222" width="222" src="./content/images/artists/austin-neill-hgO1wFPXl3I-unsplash.jpg"/>
+                            </div>
+                            <div class="artist-item-name">
+                                Doomsday
+                            </div>
+                        </div>
+                        <div class="artist-item" dom-flowt-is-visible="false" dom-flowt-type="flip-horizontal" dom-flowt-duration="1000">
+                            <div class="artist-item-header">
+                                <img alt="icon" class="artist-item-img" height="222" width="222" src="./content/images/artists/austin-neill-SLUeuL-mrRg-unsplash.jpg"/>
+                            </div>
+                            <div class="artist-item-name">
+                                DJ Fraser Laser
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="music">
+            <div class="container">
+                <div class="section-header">
+                    <p>Latest Releases</p>
+                </div>
+                <div class="section-body">
+                    <p class="text">Check out the latest tracks</p>
+                    <div class="generic-card-li">
+                        <div class="generic-card-item" dom-flowt-is-visible="false" dom-flowt-type="float-up">
+                            <div class="generic-card-header">
+                                <img alt="icon" class="generic-card-header-img" src="./content/images/tracks/austin-neill-SLUeuL-mrRg-unsplash.jpg" height="272"/>
+                            </div>
+                            <div class="generic-card-body music">
+                                <div class="">
+                                    <img alt="icon" src="./content/icons/play_circle_24dp_AC0F80_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32"/>
+                                </div>
+                                <div>
+                                    <div class="generic-card-title">Hopes & Dreams</div>
+                                    <div class="generic-card-sub-title">Dreamer</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="generic-card-item" dom-flowt-is-visible="false" dom-flowt-type="float-up">
+                            <div class="generic-card-header">
+                                <img alt="icon" class="generic-card-header-img" src="./content/images/tracks/christopher-burns-gyrrWzwqm5Y-unsplash.jpg" height="272"/>
+                            </div>
+                            <div class="generic-card-body music">
+                                <div class="">
+                                    <img alt="icon" src="./content/icons/play_circle_24dp_AC0F80_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32"/>
+                                </div>
+                                <div>
+                                    <div class="generic-card-title">Thoughts</div>
+                                    <div class="generic-card-sub-title">Iom Juan</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="generic-card-item" dom-flowt-is-visible="false" dom-flowt-type="float-up">
+                            <div class="generic-card-header">
+                                <img alt="icon" class="generic-card-header-img" src="./content/images/tracks/mos-sukjaroenkraisri-NZlyHsue0Ys-unsplash.jpg" height="272"/>
+                            </div>
+                            <div class="generic-card-body music">
+                                <div class="" onclick="music.open('Tunnel Vision', 'Artios', './content/images/tracks/mos-sukjaroenkraisri-NZlyHsue0Ys-unsplash.jpg', '#modal-artist-artios')">
+                                    <img alt="icon" src="./content/icons/play_circle_24dp_AC0F80_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32"/>
+                                </div>
+                                <div>
+                                    <div class="generic-card-title">Tunnel Vision</div>
+                                    <div class="generic-card-sub-title">Artios</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="generic-card-item" dom-flowt-is-visible="false" dom-flowt-type="float-up">
+                            <div class="generic-card-header">
+                                <img alt="icon" class="generic-card-header-img" src="./content/images/tracks/nordwood-themes-R53t-Tg6J4c-unsplash.jpg" height="272"/>
+                            </div>
+                            <div class="generic-card-body music">
+                                <div class="">
+                                    <img alt="icon" src="./content/icons/play_circle_24dp_AC0F80_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32"/>
+                                </div>
+                                <div>
+                                    <div class="generic-card-title">Untitled</div>
+                                    <div class="generic-card-sub-title">Paper Plain Jo</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="generic-card-item" dom-flowt-is-visible="false" dom-flowt-type="float-up">
+                            <div class="generic-card-header">
+                                <img  alt="icon" class="generic-card-header-img" src="./content/images/tracks/t-cWzGo1JNvZs-unsplash.jpg" height="272"/>
+                            </div>
+                            <div class="generic-card-body music">
+                                <div class="" onclick="music.open('Ouf', 'DJ Stilo Jay', './content/images/tracks/t-cWzGo1JNvZs-unsplash.jpg')">
+                                    <img alt="icon" src="./content/icons/play_circle_24dp_AC0F80_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32"/>
+                                </div>
+                                <div>
+                                    <div class="generic-card-title">Ouf</div>
+                                    <div class="generic-card-sub-title">DJ Stilo Jay</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal-album" id="modal-album-doomsday">
+            <div class="modal-album-content">
+                <div class="modal-album-header">
+                    <img alt="icon" class="modal-album-header-img" src="./content/images/albums/erik-mclean-OQgpRHFJwbQ-unsplash.jpg"/>
+                    <div class="modal-album-header-overlay">
+                        <div class="modal-album-header-close" onclick="album.close('#modal-album-doomsday')">
+                            <img alt="icon" src="./content/icons/close-line-icon.svg" height="22" width="22"/>
+                        </div>
+                        <div class="modal-album-header-items">
+                            <div class="modal-alnum-header-item-main">Operation Doomsday</div>
+                            <div class="modal-alnum-header-item-sub" onclick="album.close('#modal-album-doomsday'); artist.open('#modal-artist-doomsday')">Doomsday</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-album-body">
+                    <div class="modal-album-info">11 Tracks</div>
+                    <div class="modal-album-info">Released 2024</div>
+                    <div class="modal-album-tracks">
+                        <div class="modal-album-track" onclick="album.trackUnavailable()">
+                            <div class="modal-album-track-header">
+                                <div class="modal-album-track-name">Interlude</div>
+                                <div class="modal-album-track-duration">0:32</div>
+                            </div>
+                            <div class="modal-album-track-artist">Doomsday</div>
+                        </div>
+                        <div class="album-track-unavailable">
+                            This track is currently not available
+                        </div>
+                        <div class="modal-album-track">
+                            <div class="modal-album-track-header">
+                                <div class="modal-album-track-name">#Track 1</div>
+                                <div class="modal-album-track-duration">0:32</div>
+                            </div>
+                            <div class="modal-album-track-artist">Doomsday</div>
+                        </div>
+                        <div class="modal-album-track">
+                            <div class="modal-album-track-header">
+                                <div class="modal-album-track-name">#Track 2</div>
+                                <div class="modal-album-track-duration">0:32</div>
+                            </div>
+                            <div class="modal-album-track-artist">Doomsday</div>
+                        </div>
+                        <div class="modal-album-track">
+                            <div class="modal-album-track-header">
+                                <div class="modal-album-track-name">#Track 3</div>
+                                <div class="modal-album-track-duration">0:32</div>
+                            </div>
+                            <div class="modal-album-track-artist">Doomsday</div>
+                        </div>
+                        <div class="modal-album-track">
+                            <div class="modal-album-track-header">
+                                <div class="modal-album-track-name">#Track 4</div>
+                                <div class="modal-album-track-duration">0:32</div>
+                            </div>
+                            <div class="modal-album-track-artist">Doomsday</div>
+                        </div>
+                        <div class="modal-album-track">
+                            <div class="modal-album-track-header">
+                                <div class="modal-album-track-name">#Track 5</div>
+                                <div class="modal-album-track-duration">0:32</div>
+                            </div>
+                            <div class="modal-album-track-artist">Doomsday</div>
+                        </div>
+                        <div class="modal-album-track">
+                            <div class="modal-album-track-header">
+                                <div class="modal-album-track-name">#Track 6</div>
+                                <div class="modal-album-track-duration">0:32</div>
+                            </div>
+                            <div class="modal-album-track-artist">Doomsday</div>
+                        </div>
+                        <div class="modal-album-track">
+                            <div class="modal-album-track-header">
+                                <div class="modal-album-track-name">#Track 7</div>
+                                <div class="modal-album-track-duration">0:32</div>
+                            </div>
+                            <div class="modal-album-track-artist">Doomsday</div>
+                        </div>
+                        <div class="modal-album-track">
+                            <div class="modal-album-track-header">
+                                <div class="modal-album-track-name">#Track 8</div>
+                                <div class="modal-album-track-duration">0:32</div>
+                            </div>
+                            <div class="modal-album-track-artist">Doomsday</div>
+                        </div>
+                        <div class="modal-album-track">
+                            <div class="modal-album-track-header">
+                                <div class="modal-album-track-name">#Track 9</div>
+                                <div class="modal-album-track-duration">0:32</div>
+                            </div>
+                            <div class="modal-album-track-artist">Doomsday</div>
+                        </div>
+                        <div class="modal-album-track">
+                            <div class="modal-album-track-header">
+                                <div class="modal-album-track-name">#Track 10</div>
+                                <div class="modal-album-track-duration">0:32</div>
+                            </div>
+                            <div class="modal-album-track-artist">Doomsday</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-artist" id="modal-artist-artios">
+            <div class="modal-artist-content">
+                <div class="modal-artist-header">
+                    <img alt="icon" class="modal-artist-header-img" src="./content/images/artists/austin-neill-eC0P7kl_jXs-unsplash.jpg"/>
+                    <div class="modal-artist-header-overlay">
+                        <div class="modal-artist-header-close" onclick="artist.close('#modal-artist-artios')">
+                            <img alt="icon" src="./content/icons/close-line-icon.svg" height="22" width="22"/>
+                        </div>
+                        <div class="modal-artist-header-items">
+                            <div class="modal-alnum-header-item-main">Artios</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-artist-body">
+                    <div class="modal-artist-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-artist" id="modal-artist-doomsday">
+            <div class="modal-artist-content">
+                <div class="modal-artist-header">
+                    <img alt="icon" class="modal-artist-header-img" src="./content/images/artists/austin-neill-hgO1wFPXl3I-unsplash.jpg"/>
+                    <div class="modal-artist-header-overlay">
+                        <div class="modal-artist-header-close" onclick="artist.close('#modal-artist-doomsday')">
+                            <img alt="icon" src="./content/icons/close-line-icon.svg" height="22" width="22"/>
+                        </div>
+                        <div class="modal-artist-header-items">
+                            <div class="modal-alnum-header-item-main">Doomsday</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-artist-body">
+                    <div class="modal-artist-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-music" id="modal-music">
+            <div class="modal-music-content">
+                <div class="modal-music-header">
+                    <div class="modal-music-close">
+                        <div class="modal-music-close-line" onclick="music.close()"></div>
+                    </div>
+                </div>
+                <div class="modal-music-cover">
+                    <img  alt="icon"class="modal-music-cover-img" src="./content/images/tracks/christopher-burns-gyrrWzwqm5Y-unsplash.jpg" height="412"/>
+                </div>
+                <div class="modal-music-body">
+                    <div class="music-controls">
+                        <img  alt="icon" src="./content/icons/play_circle_24dp_AC0F80_FILL0_wght400_GRAD0_opsz24.svg" height="42" width="42"/>
+                    </div>
+                    <div class="music-track">
+                        <div class="music-duration">0:00</div>
+                        <div class="music-track-line"></div>
+                    </div>
+                    <div class="modal-music-info track">Track</div>
+                    <div class="modal-music-info artist">Artist</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./content/lib/dom-flowt/dom-flowt.js"></script>
+    <script src="./content/lib/malo/malo.js"></script>
+    <script src="./content/js/album.js"></script>
+    <script src="./content/js/artist.js"></script>
+    <script src="./content/js/music.js"></script>
+    <script>
+        DomFlowt.watch();
+        window.addEventListener("scroll", function() {
+            DomFlowt.watch()
+        })
+    </script>
+</body>
+</html>
