@@ -74,7 +74,6 @@ maloHelpers.isValidElement = function(el) {
 
 maloHelpers.startFrame = function(el, cls, cf, display) {
     el.style.animationDuration = `${cf.duration}ms`;
-    el.style.animationIterationCount = cf.iteration;
     el.style.animationTimingFunction = cf.timingFunction;
 
     if (display != 'none') { el.style.display = display; }
@@ -86,6 +85,7 @@ maloHelpers.startFrame = function(el, cls, cf, display) {
         if (typeof(cf.onComplete) !== 'undefined') cf.onComplete(); 
         maloHelpers.checkCallback(cf.hasCallback, cf.callback);
         maloHelpers.endFrame(el, cls);
+        el.style.height = null;
     }
 };
 
@@ -110,7 +110,6 @@ maloHelpers.endFrame = function(el, cls) {
     el.style.animationDuration = null;
     el.style.animationTimingFunction = null;
     el.style.animationDelay = null;
-    el.style.animationIterationCount = null;
     el.removeAttribute("is-malo-animating");
     el.onanimationend = null;
 };
